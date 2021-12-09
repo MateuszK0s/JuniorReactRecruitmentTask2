@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="formSide">
+        <form>
+          <div class="card">
+            <div class="new-book__control">
+              <label>Title</label>
+              <input type="text" id="bookTitle" />
+            </div>
+
+            <div class="new-book__control">
+              <label>Author</label>
+              <input type="text" id="bookAuthor" />
+            </div>
+
+            <div class="new-book__control">
+              <label>Priority</label>
+              <input type="number" id="bookPriority" min="1" max="5" />
+            </div>
+
+            <div class="new-book__control">
+              <label>Category</label>
+              <select id="categorySelect">
+                <option value="crime">Crime</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+              </select>
+            </div>
+            <button id="addBookButton">Add a new book</button>
+          </div>
+        </form>
+      </div>
+      <div id="tableSide">
+        <div class="card">
+          <table id="booksTable">
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Priority</th>
+              <th>Category</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
